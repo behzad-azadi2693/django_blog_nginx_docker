@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+{% if posts %}
+    {% for post in posts %}
+            {{post.titlle}} <hr>
+    {% endfor %}
+{% else %}
+    <p style="color: tomato;">not exists object</p>
+{% endif %}
+{% endblock %}
