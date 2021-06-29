@@ -23,6 +23,8 @@ services:
     volumes:
       - .:/code/
       - ./static:/app/static
+      - ./media:/app/media
+
     depends_on:
       - postgres
     expose:
@@ -45,6 +47,8 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - ./static:/app/static
+      - ./media:/app/media
+
 
 
 networks:
